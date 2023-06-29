@@ -5,11 +5,14 @@ import "fmt"
 func main() {
     for i := 1; i <= 100; i++ {
         switch {
-        case i%15 == 0:
+       // if the number can be divided by 15
+	 case i%15 == 0:
             fmt.Println("FizzBuzz")
-        case i%3 == 0:
+        // if the number can be divided by 3
+	case i%3 == 0:
             fmt.Println("Fizz")
-        case i%5 == 0:
+        // if the number can be divided by 5
+	case i%5 == 0:
             fmt.Println("Buzz")
         default:
             fmt.Println(i)
